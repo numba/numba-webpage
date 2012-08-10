@@ -29,7 +29,7 @@ from subprocess import Popen, PIPE, CalledProcessError, check_call
 
 pages_dir = 'gh-pages'
 html_dir = '_build/html'
-pages_repo = 'git@github.com:llvmpy/llvmpy.github.com.git'
+pages_repo = 'git@github.com:numba/numba.github.com.git'
 
 #-----------------------------------------------------------------------------
 # Functions

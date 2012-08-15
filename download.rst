@@ -2,6 +2,6 @@
 Downloads
 =============
 
-Stable downloads Coming Soon.  For now, view the project at `GitHub <http://github.com/numba/numba>`_
+* Version 0.1 from `PyPI <http://pypi.python.org/packages/source/n/numba/numba-0.1.tar.gz#md5=976c37888e23ae0a605f5777a390736a>`_
 
 

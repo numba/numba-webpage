@@ -5,10 +5,9 @@ Example
 
 .. code-block:: python
 
-   from numba import double
-   from numba.decorators import jit
+   from numba import autojit 
 
-   @jit(argtypes=[double[:,:]], restype = double)
+   @autojit
    def sum2d(arr):
        M, N = arr.shape
        result = 0.0
@@ -20,15 +19,24 @@ Example
 QuickStart
 ==========
 
- * Get llvmpy at http://www.llvmpy.org
+The easiest way to get started with Numba is to either:
+
+ 1) download the free Anaconda CE from here: http://continuum.io/downloads.html
+ 2) Get a Wakari account and interact on-line:  http://wakari.io
+
+If you want to build things yourself, then this can help get you started: 
+
+ * Get and install llvmpy at http://www.llvmpy.org
+ * Get and install Meta
  * Get and install numba
 
 .. code-block:: bash
 
+   git clone https://github.com/numba/Meta.git
+   cd meta
+   python setup.py install
    git clone https://github.com/numba/numba.git
    cd numba 
-   git submodule init 
-   git submodule update
    python setup.py install
 
 This project is maintained by `Continuum Analytics <http://www.continuum.io>`_

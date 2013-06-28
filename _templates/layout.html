@@ -21,7 +21,14 @@
         {%- if logo %}
           <div class="logo"><a href="{{ pathto(master_doc) }}">
             <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
-          </a></div>
+          </a>
+           <a href="http://continuum.io" >
+                <img src="{{ pathto('_static/continuum_sponsor.png', 1) }}"
+                     style="margin: 10px; position: absolute; right: 0"
+                     alt="Sponsored By Continuum Analytics, Inc" />
+            </a>
+
+          </div>
         {%- endif %}
        {# <h1><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></h1> #}
         {%- endblock %}

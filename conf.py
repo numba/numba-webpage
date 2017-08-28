@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'numba'
-copyright = u'Continuum Analytics (2012)'
+copyright = u'Anaconda, Inc (2017)'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

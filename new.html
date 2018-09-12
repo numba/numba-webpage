@@ -53,6 +53,19 @@
           <li class="navbar-item"><a class="nav-link" href="http://numba.pydata.org/numba-doc/dev/user/installing.html">Install</a></li>
           <li class="navbar-item"><a class="nav-link" href="https://numba.pydata.org/numba-examples/">Examples</a></li>
           <li class="navbar-item"><a class="nav-link" href="http://numba.pydata.org/numba-doc/dev/user/talks.html">Talks/Tutorials</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Community
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="https://github.com/numba/numba">Github</a>
+              <a class="dropdown-item" href="https://pypi.org/project/numba/">PyPI</a>
+              <a class="dropdown-item" href="https://gitter.im/numba/numba">Gitter Chat</a>
+              <a class="dropdown-item" href="https://groups.google.com/a/continuum.io/forum/#!forum/numba-users">Numba Mailing List</a>
+            </div>
+          </li>
+
         </ul>
       </div>
     </nav>
@@ -61,14 +74,14 @@
       <div class="col-md-5 p-lg-1 mx-auto my-5">
         <img src="_static/numba-blue-horizontal-rgb.svg" style="max-width: 30rem;">
 		  <p class="lead font-weight-normal">
-        Numba makes Python code run fast!
+        Numba makes Python code fast
       </p>
 		  <p class="lead ">
-        Numba is a JIT compiler that translates a subset of Python and NumPy code into fast machine code.
+        Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code.
       </p>
         <a class="btn outline-numba btn-lg" href="http://numba.pydata.org/numba-doc/dev/user/5minguide.html">Learn More</a>
         <a class="btn filled-numba btn-lg" href="https://mybinder.org/v2/gh/numba/numba-examples/master?filepath=notebooks"
-                      role="button">Try Numba On Binder &raquo;</a>
+                      role="button">Try Numba &raquo;</a>
       </div>
       <div class="product-device box-shadow d-none d-md-block"></div>
       <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
@@ -85,8 +98,8 @@
             <h2 class="featurette-heading">Accelerate Python Functions</h2>
             <h2 class="featurette-subheading">Just-in-time compilation directly from Python</h2>
             <p class="lead">Numba translates Python functions to optimized machine code at runtime using the 
-              industry-standard LLVM compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of equivalent C or FORTRAN code.</p>
-            <p class="lead">You don't need to replace the Python interpreter, run a separate compilation step, or event
+              industry-standard <a href="https://llvm.org/">LLVM</a> compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of C or FORTRAN.</p>
+            <p class="lead">You don't need to replace the Python interpreter, run a separate compilation step, or even
               have a C/C++ compiler installed. Just apply one of the Numba decorators to your Python function, and Numba does the rest.
             </p>
             <a class="btn btn-outline-secondary" href="http://numba.pydata.org/numba-doc/dev/user/jit.html" role="button">Learn More &raquo;</a>
@@ -116,8 +129,8 @@ def monte_carlo_pi(nsamples):
             <h2 class="featurette-heading">Built for Scientific Computing</h2>
             <h2 class="featurette-subheading">Ideal for Numerical Algorithms</h2>
             <p class="lead">Numba is designed to be used with NumPy arrays and functions.  Numba generates specialized code for
-              different array data types and layouts for optimal performance.  Special decorators can create <a href="https://docs.scipy.org/doc/numpy/reference/ufuncs.html">universal functions</a> that broadcast over NumPy arrays just like NumPy functions do.</p>
-            <p class="lead">Numba also works great with Jupyter notebooks for interactive computing, and distributed execution frameworks, like Dask and Spark.</p>
+              different array data types and layouts to optimize performance.  Special decorators can create <a href="https://docs.scipy.org/doc/numpy/reference/ufuncs.html">universal functions</a> that broadcast over NumPy arrays just like NumPy functions do.</p>
+            <p class="lead">Numba also works great with Jupyter notebooks for interactive computing, and with distributed execution frameworks, like Dask and Spark.</p>
             <a class="btn btn-outline-secondary" href="http://numba.pydata.org/numba-doc/dev/reference/numpysupported.html" role="button">Learn More &raquo;</a>
             <a class="btn btn-secondary" href="https://mybinder.org/v2/gh/numba/numba-examples/master?filepath=notebooks%2Fnumpy.ipynb" role="button">Try Now &raquo;</a>
           </div>
@@ -200,13 +213,24 @@ def simulator(out):
           <p>Numba development is made possible through the current and/or past support of a number of organizations:<p>
           <div class="row">
             <div class="col supporter">
-              <a href="https://anaconda.com"><img src="https://www.anaconda.com/wp-content/themes/anaconda/images/logo-dark.png"></a>
+              <a href="https://anaconda.com"><img src="_static/anaconda_logo.png"></a>
             </div>
             <div class="col supporter">
-              <a href="https://www.darpa.mil"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/DARPA_Logo.jpg/320px-DARPA_Logo.jpg"></a>
+              <a href="https://www.darpa.mil"><img src="_static/darpa_logo.png"></a>
             </div>
             <div class="col supporter">
-              <a href="https://www.moore.org/grant-detail?grantId=GBMF5423"><img src="https://www.moore.org/content/images/logo-light.png"></a>
+              <a href="https://www.moore.org/grant-detail?grantId=GBMF5423"><img src="_static/moore_logo.png"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col supporter">
+              <a href="https://www.intel.com"><img src="_static/intel_logo.png"></a>
+            </div>
+            <div class="col supporter">
+              <a href="https://www.nvidia.com/"><img src="_static/nvidia_logo.png"></a>
+            </div>
+            <div class="col supporter">
+              <a href="https://www.amd.com"><img src="_static/amd_logo.png"></a>
             </div>
           </div>
         </div>

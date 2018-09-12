@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css">
+     <link rel="stylesheet" href="_static/prism-duotone-light.css">
 
     <!-- Custom styles for this template -->
     <link href="_static/main-page.css" rel="stylesheet">
@@ -96,7 +96,6 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Accelerate Python Functions</h2>
-            <h2 class="featurette-subheading">Just-in-time compilation directly from Python</h2>
             <p class="lead">Numba translates Python functions to optimized machine code at runtime using the 
               industry-standard <a href="https://llvm.org/">LLVM</a> compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of C or FORTRAN.</p>
             <p class="lead">You don't need to replace the Python interpreter, run a separate compilation step, or even
@@ -127,7 +126,6 @@ def monte_carlo_pi(nsamples):
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Built for Scientific Computing</h2>
-            <h2 class="featurette-subheading">Ideal for Numerical Algorithms</h2>
             <p class="lead">Numba is designed to be used with NumPy arrays and functions.  Numba generates specialized code for
               different array data types and layouts to optimize performance.  Special decorators can create <a href="https://docs.scipy.org/doc/numpy/reference/ufuncs.html">universal functions</a> that broadcast over NumPy arrays just like NumPy functions do.</p>
             <p class="lead">Numba also works great with Jupyter notebooks for interactive computing, and with distributed execution frameworks, like Dask and Spark.</p>
@@ -149,7 +147,6 @@ def logistic_regression(Y, X, w, iterations):
         <hr class="featurette-divider">
 
         <h2 class="featurette-heading">Parallelize Your Algorithms</h2>
-        <h2 class="featurette-subheading">Use your whole computer</h2>
         <p>Numba offers a range of options for parallelizing your code for CPUs and GPUs, often with only minor code changes.</p>
         <div class="row">
 
@@ -196,7 +193,6 @@ def simulator(out):
         <div class="row featurette">
           <div class="col-md-12">
             <h2 class="featurette-heading">Portable Compilation</h2>
-            <h2 class="featurette-subheading">Works on all the platforms you do</h2>
             <p class="lead">Ship high performance Python applications without the headache of binary compilation and packaging.  Your source code remains pure Python while Numba handles the compilation at runtime.  We test Numba continuously in more than 200 different platform configurations.</p>
             <p class="lead">Numba supports Intel and AMD x86, POWER8/9, and ARM CPUs, NVIDIA and  AMD GPUs, Python 2.7 and 3.4-3.7, as well as Windows/macOS/Linux.  Precompiled Numba binaries for most systems are available as conda packages and pip-installable wheels.</p>
             <a class="btn btn-outline-secondary" href="http://numba.pydata.org/numba-doc/dev/user/installing.html" role="button">Learn More &raquo;</a>

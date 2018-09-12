@@ -28,7 +28,7 @@ from subprocess import Popen, PIPE, CalledProcessError, check_call
 #-----------------------------------------------------------------------------
 
 pages_dir = 'gh-pages'
-html_dir = '_build/html'
+html_dir = '.'
 pages_repo = 'git@github.com:numba/numba.github.com.git'
 
 #-----------------------------------------------------------------------------
@@ -93,7 +93,10 @@ if __name__ == '__main__':
     # directory, and then copy the html tree in there
     sh('rm -r %s/*' % pages_dir)
     sh('echo numba.pydata.org >%s/CNAME' % pages_dir)
-    sh('cp -r %s/* %s/' % (html_dir, pages_dir))
+
+    # NOTE: This is where you add additional subdirectories or filenames
+    for subpath in ['_static', 'index.html']:
+        sh('cp -r %s/%s %s/%s' % (html_dir, subpath, pages_dir, subpath))
 
     try:
         cd(pages_dir)
